@@ -1,118 +1,147 @@
-/* Reseta o estilo padrão */
+/* Reset de estilos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #fff; /* Para garantir que o texto seja visível contra o fundo escuro */
+  background-color: #f4f7fc; /* Cor de fundo clara */
   
-  /* Define o estilo da fonte e o fundo da página */
-  body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  header h1 {
-    font-size: 1.8rem;
-  }
-  
-  header nav a {
-    color: #fff;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  header nav a:hover {
-    color: #007BFF;
-  }
-  
-  section {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .projeto {
-    margin-bottom: 30px;
-  }
-  
-  .projeto h3 {
-    font-size: 1.6rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .projeto p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
-  
-  .projeto a {
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: 500;
-  }
-  
-  .projeto a:hover {
-    color: #0056b3;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  footer p {
-    font-size: 1rem;
-  }
-  
-  @media (max-width: 768px) {
-    header .container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    header h1 {
-      margin-bottom: 20px;
-    }
-  
-    header nav a {
-      margin-left: 0;
-      margin-top: 10px;
-    }
-  
-    section {
-      padding: 40px 20px;
-    }
-  
-    h2 {
-      font-size: 1.8rem;
-    }
-  }
+}
+
+
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #4c3c91; /* Roxo escuro */
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Seções */
+.section-padding {
+  padding: 60px 0;
+}
+
+#sobre {
+  background-color: #fff;
+  text-align: center;
+}
+
+#sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4c3c91; /* Roxo para o título */
+}
+
+#sobre p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Projetos */
+#projetos {
+  background-color: #e1e8f0; /* Azul claro */
+  text-align: center;
+}
+
+#projetos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4c3c91; /* Roxo para o título */
+}
+
+.projeto {
+  margin: 20px 0;
+}
+
+.projeto h3 {
+  font-size: 1.5rem;
+  color: #4c3c91; /* Roxo escuro para o título */
+}
+
+.projeto p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.projeto a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4c3c91; /* Roxo escuro */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.projeto a:hover {
+  background-color: #3a2c72; /* Roxo ainda mais escuro para hover */
+}
+
+/* Contato */
+#contato {
+  background-color: #fff;
+  text-align: center;
+}
+
+#contato h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4c3c91; /* Roxo para o título */
+}
+
+#contato p {
+  font-size: 1rem;
+  color: #666;
+}
+
+#contato a {
+  color: #4c3c91; /* Roxo para o link */
+  text-decoration: none;
+}
+
+#contato a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #4c3c91; /* Roxo escuro */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
