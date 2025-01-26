@@ -1,4 +1,4 @@
-/* Reset de estilos */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -7,141 +7,132 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #fff; /* Para garantir que o texto seja visível contra o fundo escuro */
-  background-color: #f4f7fc; /* Cor de fundo clara */
-  
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-
-
-/* Container */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Header */
+/* HEADER */
 header {
-  background-color: #4c3c91; /* Roxo escuro */
-  color: #fff;
-  padding: 20px 0;
-}
-
-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+  background-color: #111;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
-header h1 {
-  font-size: 1.8rem;
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-header nav a {
+header .menu a {
   color: #fff;
   text-decoration: none;
-  margin-left: 20px;
+  margin: 0 10px;
   font-weight: 500;
 }
 
-header nav a:hover {
-  text-decoration: underline;
+header .menu a:hover {
+  color: #007BFF;
 }
 
-/* Seções */
-.section-padding {
-  padding: 60px 0;
-}
-
-#sobre {
-  background-color: #fff;
+/* BANNER */
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
   text-align: center;
+  color: #160b0b;
 }
 
-#sobre h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #4c3c91; /* Roxo para o título */
+.banner h1 {
+  font-size: 3rem;
 }
 
-#sobre p {
-  font-size: 1rem;
-  color: #666;
-}
-
-/* Projetos */
-#projetos {
-  background-color: #e1e8f0; /* Azul claro */
-  text-align: center;
-}
-
-#projetos h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #4c3c91; /* Roxo para o título */
-}
-
-.projeto {
+.banner p {
   margin: 20px 0;
+  font-size: 1.2rem;
 }
 
-.projeto h3 {
-  font-size: 1.5rem;
-  color: #4c3c91; /* Roxo escuro para o título */
-}
-
-.projeto p {
-  font-size: 1rem;
-  color: #666;
-}
-
-.projeto a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #4c3c91; /* Roxo escuro */
+.banner .btn {
+  background-color: #007BFF;
   color: #fff;
   text-decoration: none;
+  padding: 10px 20px;
   border-radius: 5px;
+  font-weight: bold;
 }
 
-.projeto a:hover {
-  background-color: #3a2c72; /* Roxo ainda mais escuro para hover */
+.banner .btn:hover {
+  background-color: #0056b3;
 }
 
-/* Contato */
-#contato {
-  background-color: #fff;
+/* SEÇÕES */
+.section {
+  padding: 60px 20px;
   text-align: center;
 }
 
-#contato h2 {
+.section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #4c3c91; /* Roxo para o título */
 }
 
-#contato p {
-  font-size: 1rem;
-  color: #666;
+/* GRID DE PROJETOS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-#contato a {
-  color: #4c3c91; /* Roxo para o link */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card .btn {
+  background-color: #007BFF;
+  color: #fff;
   text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
 }
 
-#contato a:hover {
-  text-decoration: underline;
+.card .btn:hover {
+  background-color: #0056b3;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
-  background-color: #4c3c91; /* Roxo escuro */
+  background: #111;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px;
   margin-top: 20px;
+}
+
+footer .socials a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer .socials a:hover {
+  color: #007BFF;
 }

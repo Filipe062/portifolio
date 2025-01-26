@@ -35,3 +35,49 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  // Rolagem suave para os links do menu
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault(); // Evita o comportamento padrão do link
+    const targetId = this.getAttribute('href').substring(1); // Remove o '#' do href
+    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' }); // Rola suavemente até a seção
+  });
+});
+
+// Mensagem no console ao carregar a página
+console.log('Portfólio de Luiz Filipe carregado com sucesso!');
+
+// Adicionar interatividade nos projetos
+const projetos = document.querySelectorAll('.projeto');
+projetos.forEach(projeto => {
+  projeto.addEventListener('mouseenter', () => {
+    projeto.style.transform = 'scale(1.05)';
+    projeto.style.transition = 'transform 0.3s';
+  });
+  projeto.addEventListener('mouseleave', () => {
+    projeto.style.transform = 'scale(1)';
+  });
+});
+// Rolagem suave para os links do menu
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault(); // Evita o comportamento padrão do link
+    const targetId = this.getAttribute('href').substring(1); // Remove o '#' do href
+    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' }); // Rola suavemente até a seção
+  });
+});
+
+// Mensagem no console ao carregar a página
+console.log('Portfólio de Luiz Filipe carregado com sucesso!');
+
+// Adicionar interatividade nos projetos
+const projetos1 = document.querySelectorAll('.projeto');
+projetos1.forEach(projeto => {
+  projeto.addEventListener('mouseenter', () => {
+    projeto.style.transform = 'scale(1.05)';
+    projeto.style.transition = 'transform 0.3s';
+  });
+  projeto.addEventListener('mouseleave', () => {
+    projeto.style.transform = 'scale(1)';
+  });
+});
